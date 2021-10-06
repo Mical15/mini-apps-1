@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.12.1/underscore-min.js"></script> -->
+  <script src='app.js'></script>
+</head>
+<body>
+
+<h2>CSV Report Generator</h2>
+
+<form action="/" method="POST" enctype="multipart/form-data">
+  <input type="file" name="fileinput" id="fileinput"/>
+  <br></br>
+  <input type="submit" id="submit" value="Submit">
+</form>
+
+<br></br>
+<div id='downloadlocation'>
+  <button action='/download' method='GET' id='download'>Download CSV</button>
+</div>
+
+
+</body>
+
